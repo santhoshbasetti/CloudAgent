@@ -1,0 +1,113 @@
+package com.CA.qa.Base;
+
+//import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+import com.CA.qa.Util.Testutil;
+//import com.CA.qa.Util.WebEventListener;
+
+public class TestBase {
+
+	public static WebDriver driver;
+	public static WebDriver driver1;
+	public static Properties prop;
+	public static EventFiringWebDriver e_driver;
+	//public static WebEventListener eventlistener;
+	public static EventFiringWebDriver e_driver1;
+	//public static WebEventListener eventlistener1;
+	//public static JavascriptExecutor js = (JavascriptExecutor)driver;
+	
+	
+	public TestBase() {
+		prop = new Properties();
+		
+		try {
+			
+			//FileInputStream fis = new FileInputStream("/home/santosh/eclipse-workspace/CloudAgent/src/main/java/com/CA/qa/config/config.properties");
+					//System.getProperty("user.dir")+ "src/main/java/com/CA/qa/config/config.properties");
+			InputStream fis = TestBase.class.getClassLoader().getResourceAsStream("com/CA/qa/config/config.properties");
+			
+			prop.load(fis);
+			 
+		}catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	 }
+	
+	public static void ATBLogin() {
+		String browserName= prop.getProperty("Browser");
+		if (browserName.equals("chrome")){
+			driver = new ChromeDriver();
+		}
+		
+		e_driver = new EventFiringWebDriver(driver);
+//		eventlistener = new WebEventListener();
+//		e_driver.register(eventlistener);
+		driver = e_driver;
+		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Testutil.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Testutil.PAGE_LOAD_TIME, TimeUnit.SECONDS);
+		ArrayList<String> URL=Testutil.Readexcel("AgentLogin",0);
+		//driver.get(prop.getProperty("AgentToolBar_url"));
+		driver.get(URL.get(0));
+	}
+	
+				
+	public static void AdminLogin() {
+		
+		String browserName= prop.getProperty("Browser");
+		if (browserName.equals("chrome")){
+			driver1 = new ChromeDriver();
+		      }
+		e_driver1 = new EventFiringWebDriver(driver1);
+//		eventlistener1 = new WebEventListener();
+//		e_driver1.register(eventlistener1);
+		driver1 = e_driver1;
+		
+		driver1.manage().window().maximize();
+		driver1.manage().deleteAllCookies();
+		driver1.manage().timeouts().implicitlyWait(Testutil.IMPLICIT_WAIT_TIME_admin, TimeUnit.SECONDS);
+		driver1.manage().timeouts().pageLoadTimeout(Testutil.PAGE_LOAD_TIME, TimeUnit.SECONDS);
+		
+		ArrayList<String> URL=Testutil.Readexcel("AdminLogin",0);
+		//System.out.println(URL.get(0));
+		driver1.get(URL.get(0));
+		
+		//driver1.get(prop.getProperty("Admin_url"));
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Cloud Agent Application test cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Cloud Agent Application test cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 01 16:00:50 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>192 seconds (192226 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarLoginPageTest.ATBLoginPage_TitleTest()'><b>ATBLoginPage_TitleTest</b><br>Test class: com.CA.qa.TestCases.AgentToolBarLoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AgentToolBarLoginPageTest@e25b2fe</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarLoginPageTest.ATBLoginpage_logoTest()'><b>ATBLoginpage_logoTest</b><br>Test class: com.CA.qa.TestCases.AgentToolBarLoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AgentToolBarLoginPageTest@e25b2fe</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarLoginPageTest.ATBloginTest()'><b>ATBloginTest</b><br>Test class: com.CA.qa.TestCases.AgentToolBarLoginPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.CA.qa.TestCases.AgentToolBarLoginPageTest@e25b2fe</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentATBForceRelease()'><b>VerifyAgentATBForceRelease</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentModeAfterBlended()'><b>VerifyAgentModeAfterBlended</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentModeAfterInbound()'><b>VerifyAgentModeAfterInbound</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentModeAfterManual()'><b>VerifyAgentModeAfterManual</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentModeAfterPreview()'><b>VerifyAgentModeAfterPreview</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentModeAfterProgressive()'><b>VerifyAgentModeAfterProgressive</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentModeAtStart()'><b>VerifyAgentModeAtStart</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentStatusToPause()'><b>VerifyAgentStatusToPause</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.TryTest.VerifyAgentStatusToPause()'><b>VerifyAgentStatusToPause</b><br>Test class: com.CA.qa.TestCases.TryTest</td>
+<td></td>
+<td>6</td>
+<td>com.CA.qa.TestCases.TryTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.TryTest.VerifyAgentStatusToPause()'><b>VerifyAgentStatusToPause</b><br>Test class: com.CA.qa.TestCases.TryTest</td>
+<td></td>
+<td>6</td>
+<td>com.CA.qa.TestCases.TryTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.TryTest.VerifyAgentStatusToPause()'><b>VerifyAgentStatusToPause</b><br>Test class: com.CA.qa.TestCases.TryTest</td>
+<td></td>
+<td>6</td>
+<td>com.CA.qa.TestCases.TryTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.TryTest.VerifyAgentStatusToPause()'><b>VerifyAgentStatusToPause</b><br>Test class: com.CA.qa.TestCases.TryTest</td>
+<td></td>
+<td>6</td>
+<td>com.CA.qa.TestCases.TryTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.TryTest.VerifyAgentStatusToPause()'><b>VerifyAgentStatusToPause</b><br>Test class: com.CA.qa.TestCases.TryTest</td>
+<td></td>
+<td>6</td>
+<td>com.CA.qa.TestCases.TryTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentStatusToReady()'><b>VerifyAgentStatusToReady</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.verifyATBHomePage_TitleTest()'><b>verifyATBHomePage_TitleTest</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AdminLoginPageTest.verifyAdminLoginPage_TitleTest()'><b>verifyAdminLoginPage_TitleTest</b><br>Test class: com.CA.qa.TestCases.AdminLoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AdminLoginPageTest@146ba0ac</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AdminLoginPageTest.verifyAdminLoginpage_logoTest()'><b>verifyAdminLoginpage_logoTest</b><br>Test class: com.CA.qa.TestCases.AdminLoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AdminLoginPageTest@146ba0ac</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AdminLoginPageTest.verifyAdminloginTest()'><b>verifyAdminloginTest</b><br>Test class: com.CA.qa.TestCases.AdminLoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.CA.qa.TestCases.AdminLoginPageTest@146ba0ac</td></tr>
+<tr>
+<td title='com.CA.qa.TestCases.AgentToolBarHomePageTest.verifyAgentStatusTestAtStart()'><b>verifyAgentStatusTestAtStart</b><br>Test class: com.CA.qa.TestCases.AgentToolBarHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.CA.qa.TestCases.AgentToolBarHomePageTest@754ba872</td></tr>
+</table><p>
+</body>
+</html>
