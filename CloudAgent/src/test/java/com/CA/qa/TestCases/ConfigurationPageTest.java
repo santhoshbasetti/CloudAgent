@@ -77,6 +77,7 @@ public class ConfigurationPageTest extends TestBase {
 			if (act.trim().equalsIgnoreCase("ADD")) {
 				String m1=ConfigurationsPage.addPhoneNo(name, pno, pr, sip);
 				System.out.println(m1);
+				System.out.println();
 				Assert.assertTrue(m1.contains("success"),"Phone No "+pno +" not added");
 			}
 			else if (act.trim().equalsIgnoreCase("EDIT")) {
