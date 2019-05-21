@@ -80,6 +80,7 @@ public class AdminHomePageTest extends TestBase{
 	public void teardown() {
 		//driver.quit();
 		driver1.quit();
+		Printhyphens();
 	}
 
 }

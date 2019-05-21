@@ -124,6 +124,7 @@ public class AgentToolBarLoginPageTest extends TestBase{
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
+		Printhyphens();
 		
 	}
 	

@@ -63,6 +63,7 @@ public class AdminLoginPageTest extends TestBase{
 	public void teardown() {
 		//driver.quit();
 		driver1.quit();
+		Printhyphens();
 	}
 
 }

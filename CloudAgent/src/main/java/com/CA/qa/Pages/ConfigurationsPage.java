@@ -115,6 +115,33 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(id= "fwpNumberForm_fwpNumber_sip")
 	WebElement Number_sip;
 	
+	@FindBy(xpath= "//*[@id='wwlbl_fwpNumberForm_fwpNumber_sip' ] [@for='fwpNumberForm_fwpNumber_sip']")
+	WebElement Number_sip1;
+	
+	@FindBy(id= "transferNumberForm_transferNumber_transferName")
+	WebElement transferName;
+	
+	@FindBy(id= "transferNumberForm_transferNumber_transferNumber")
+	WebElement transferNumber;
+	
+	@FindBy(id= "transferNumberForm_transferNumber_sip")
+	WebElement transferNumber_sip;
+	
+	@FindBy(xpath= "//*[@id='wwlbl_transferNumberForm_transferNumber_sip' ] [@for='transferNumberForm_transferNumber_sip']")
+	WebElement transferNumber_sip1;
+	
+	@FindBy(id= "dispositionForm_disposition_reason")
+	WebElement disposition_reason;
+	
+	@FindBy(id= "pauseReasonForm_pauseReason_reason")
+	WebElement pauseReason_reason;
+	
+	@FindBy(id= "pauseReasonForm_pauseReason_formattedTimeLimit")
+	WebElement pauseReason_Time;
+	
+	@FindBy(xpath= "//*[@id='wwctrl_pauseReasonForm_pauseReason_formattedTimeLimit']//a")
+	WebElement pauseReasonTime_clear;
+	
 	@FindBy(xpath= "//*[contains(@id,'save')]")
 	WebElement config_save_button;
 	
@@ -124,8 +151,11 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(xpath= "//*[@id='report']/tbody/tr/td[1]")
 	WebElement Agent_table_data_1stRow;
 
-	@FindBy(xpath= "//*[@id='fwpNumberList']/tbody/tr/td[1]")
-	WebElement phoneNo_table_data_1stRow;
+//	@FindBy(xpath= "//*[@id='fwpNumberList']/tbody/tr/td[1]")
+//	WebElement phoneNo_table_data_1stRow;
+	
+	@FindBy(xpath= "//tbody/tr/td[1]")
+	WebElement table_data_1stRow;
 	
 	@FindBy(xpath= "//*[contains(@name,'delete')]")
 	WebElement config_delete_button;
@@ -433,9 +463,9 @@ public class ConfigurationsPage extends TestBase{
 	public void EnterSIPforPhone(Object S) {
 		if(!S.equals("")) {
 			if(S.toString().trim().equalsIgnoreCase("yes") && !Number_sip.isSelected())
-				Number_sip.click();
+				Number_sip1.click();
 			if(S.toString().trim().equalsIgnoreCase("no") && Number_sip.isSelected())
-				Number_sip.click();
+				Number_sip1.click();
 		}
 	}
 	public String addPhoneNo(Object name, Object phno,Object pr,Object sip) {
@@ -473,8 +503,8 @@ public class ConfigurationsPage extends TestBase{
 		if(H.contains("Phone Numbers")) {
 			EnterSerachItem(phno);
 			ClickOnShowAllButton();
-			if(!phoneNo_table_data_1stRow.getText().contains("Nothing") ) {
-				phoneNo_table_data_1stRow.click();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
 				String H1 =GetConfigHeader();
 				if(H1.contains("Edit Phone Number") && Number_name.getAttribute("value").equals(name.toString().trim()) && Number_phoneNumber.getAttribute("value").equals(phno.toString().trim())) {
 					EnterNameForPhoneNo(Nname);
@@ -496,8 +526,8 @@ public class ConfigurationsPage extends TestBase{
 		if(H.contains("Phone Numbers")) {
 			EnterSerachItem(phno);
 			ClickOnShowAllButton();
-			if(!phoneNo_table_data_1stRow.getText().contains("Nothing") ) {
-				phoneNo_table_data_1stRow.click();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
 				if(Number_name.getAttribute("value").equalsIgnoreCase(name.trim()) && Number_phoneNumber.getAttribute("value").equalsIgnoreCase(phno.trim())) {
 					config_delete_button.click();	
 					driver1.switchTo().alert().accept();
@@ -507,19 +537,223 @@ public class ConfigurationsPage extends TestBase{
 	}return " header is not matching";
 	}
 	
+	public void EnterTransfername(Object name) {
+		if(!name.equals(""))
+			transferName.clear();
+			transferName.sendKeys(name.toString().trim());
+	}
 	
+	public void EnterTransferNo(Object no) {
+		if(!no.equals(""))
+			transferNumber.clear();
+			transferNumber.sendKeys(no.toString().trim());
+	}
 	
+	public void EnterTransferSip(Object S) {
+		if(!S.equals(""))
+			if(S.toString().trim().equalsIgnoreCase("yes") && !transferNumber_sip.isSelected())
+				transferNumber_sip1.click();
+			if(S.toString().trim().equalsIgnoreCase("no") && transferNumber_sip.isSelected())
+				transferNumber_sip1.click();
+			
+	}
 	
+	public String AddTransferNumber(Object name, Object no, Object sip) {
+		ConfigurationMenu.click();
+		TransferNumberMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("TransferNumbers")) {
+			ClickOnAddConfig();
+			String H1 =GetConfigHeader();
+			if(H1.contains("Add")) {
+				EnterTransfername(name);
+				EnterTransferNo(no);
+				EnterTransferSip(sip);
+				ClickOnSaveforConfig();
+				return Getmessagediv();
+			}	return "'add'header not matching";
+		}return "'Transfer' header not matching";
+	}
 	
+	public String EditTransferNo(Object name, Object Nname,Object phno,Object Nphno,Object sip) {
+		String nn,np;
+		if (!Nname.equals(""))
+			nn=Nname.toString();
+		else nn=name.toString();
+		if (!Nphno.equals(""))
+			np=Nphno.toString();
+		else np=phno.toString();
+		
+		System.out.println("Editing Transfer no details: name: "+name+"  New name: "+nn+"   Phno: "+phno+" new phno: "+np);
+		ConfigurationMenu.click();
+		TransferNumberMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("TransferNumbers")) {
+			EnterSerachItem(phno);
+			ClickOnShowAllButton();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
+				String H1 =GetConfigHeader();
+				if(H1.contains("Edit") && transferName.getAttribute("value").equals(name.toString().trim()) && transferNumber.getAttribute("value").equals(phno.toString().trim())) {
+					EnterTransfername(Nname);
+					EnterTransferNo(Nphno);
+					EnterTransferSip(sip);
+					ClickOnSaveforConfig();
+					return Getmessagediv();
+				}	return "header 'Edit' or name or number not matching";
+		}return "no data found";
+		}return "header not matching";
+	}
 	
+	public String deleteTransferNo(String name, String phno) {
+		System.out.println("Deleting Transfer no details: name: "+name+"   Phno: "+phno);
+		ConfigurationMenu.click();
+		TransferNumberMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("TransferNumbers")) {
+			EnterSerachItem(phno);
+			ClickOnShowAllButton();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
+				if(transferName.getAttribute("value").equalsIgnoreCase(name.trim()) && transferNumber.getAttribute("value").equalsIgnoreCase(phno.trim())) {
+					config_delete_button.click();	
+					driver1.switchTo().alert().accept();
+					return Getmessagediv();	
+				} return "names are not matching so not deleting";
+			} return "no data found with deatils:  Name: "+name+"   PhNo: "+phno;
+	}return " header is not matching";
+	}
 	
+	public void Enterdispositions(String R) {
+		if(!R.trim().equals("")) {
+			disposition_reason.clear();
+			disposition_reason.sendKeys(R);
+	}}
 	
+	public String AddDispositions(String Reason) {
+		System.out.println("disposition details for Adding: reason: "+Reason);
+		ConfigurationMenu.click();
+		DispositionMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("Dispositions")) {
+			ClickOnAddConfig();
+			String H1 =GetConfigHeader();
+			if(H1.contains("Add")) {
+				Enterdispositions(Reason);
+				ClickOnSaveforConfig();
+				return Getmessagediv();
+			}return " 'Add' header is not matching";
+		}return " 'Dispositions' header is not matching";
+	}
 	
+	public String EditDispositions(String Reason, String Reason1) {
+		System.out.println("disposition details for Editing: reason: "+Reason+"  new reason: "+Reason1);
+		ConfigurationMenu.click();
+		DispositionMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("Dispositions")) {
+			EnterSerachItem(Reason);
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
+				if(GetConfigHeader().contains("Edit") && disposition_reason.getAttribute("value").equalsIgnoreCase(Reason.trim()) ) {
+					Enterdispositions(Reason1);
+					ClickOnSaveforConfig();
+					return Getmessagediv();
+				} return "either Edit header or reason not matching";
+			}return "no data found to edit";
+		}return " 'Dispositions' header is not matching";
+	}
 	
+	public String deleteDisposition(String reason) {
+		System.out.println("Deleting disposition details: Reason: "+reason);
+		ConfigurationMenu.click();
+		DispositionMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("Dispositions")) {
+			EnterSerachItem(reason);
+			ClickOnShowAllButton();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
+				if(GetConfigHeader().contains("Edit") && disposition_reason.getAttribute("value").equalsIgnoreCase(reason.trim())) {
+					config_delete_button.click();	
+					driver1.switchTo().alert().accept();
+					return Getmessagediv();	
+				} return "names are not matching so not deleting";
+			} return "no data found with deatils "+reason;
+	}return " header is not matching";
+	}
 	
+	public void EnterPauseReason(Object Preason) {
+		if(!Preason.equals("")) {
+			pauseReason_reason.clear();
+			pauseReason_reason.sendKeys(Preason.toString().trim());
+		}}
 	
+	public void EnterPauseTime(Object rTime) {
+		if(!rTime.equals("")) {
+			pauseReasonTime_clear.click();
+			((JavascriptExecutor)driver1).executeScript("arguments[0].removeAttribute('readonly')", pauseReason_Time);
+			pauseReason_Time.sendKeys(rTime.toString().trim());
+		}}
 	
+	public String AddPauseReason(String reason, Object time) {
+		System.out.println("Adding Pause reason details: reason: "+reason);
+		ConfigurationMenu.click();
+		PauseReasonMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("Pause Reasons")) {
+			ClickOnAddConfig();
+			String H1 =GetConfigHeader();
+			if(H1.contains("Add")) {
+				EnterPauseReason(reason);
+				EnterPauseTime(time);
+				ClickOnSaveforConfig();
+				return Getmessagediv();
+			}return " 'Add' header is not matching";
+		}return " 'Dispositions' header is not matching";
+	}
 	
+	public String EditPausereason(String reason,Object reason1,Object time) {
+		String str ="";
+		if(!reason1.equals(""))
+			str="  new reason is: "+reason1.toString();
+		System.out.println("Editing Pause reason details: reason: "+reason+str);
+		ConfigurationMenu.click();
+		PauseReasonMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("Pause Reasons")) {
+			EnterSerachItem(reason);
+			ClickOnShowAllButton();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
+				if(GetConfigHeader().contains("Edit") && pauseReason_reason.getAttribute("value").equalsIgnoreCase(reason.trim())) {
+					EnterPauseReason(reason1);
+					EnterPauseTime(time);
+					ClickOnSaveforConfig();
+					return Getmessagediv();
+				}return "either Edit header or reason not matching";
+			}return "no data found to edit";
+		}return " 'Pause' header is not matching";
+	}
+	
+	public String deletePauseReason(String reason) {
+		System.out.println("Deleting Pause reason details: reason: "+reason);
+		ConfigurationMenu.click();
+		PauseReasonMenu.click();
+		String H =GetConfigHeader();
+		if(H.contains("Pause Reasons")) {
+			EnterSerachItem(reason);
+			ClickOnShowAllButton();
+			if(!table_data_1stRow.getText().contains("Nothing") ) {
+				table_data_1stRow.click();
+				if(GetConfigHeader().contains("Edit") && pauseReason_reason.getAttribute("value").equalsIgnoreCase(reason.trim())) {
+					config_delete_button.click();	
+					driver1.switchTo().alert().accept();
+					return Getmessagediv();	
+				} return "names are not matching so not deleting";
+			} return "no data found with deatils "+reason;
+	}return " header is not matching";
+	}
 	
 	
 	

@@ -250,6 +250,7 @@ public class AgentToolBarHomePageTest extends TestBase{
 		ATBHomePage.AgentLogout();
 		driver.quit();
 		//driver1.quit();
+		Printhyphens();
 	}
 	
 	

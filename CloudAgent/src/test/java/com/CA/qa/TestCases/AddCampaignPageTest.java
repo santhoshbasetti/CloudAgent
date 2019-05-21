@@ -171,6 +171,7 @@ public class AddCampaignPageTest extends TestBase{
 	public void nteardown() {
 		AdminHomepage.admin_logout();
 		driver1.close();
+		Printhyphens();
 	}
 	
 }

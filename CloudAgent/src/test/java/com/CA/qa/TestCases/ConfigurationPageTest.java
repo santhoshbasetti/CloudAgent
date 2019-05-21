@@ -35,6 +35,7 @@ public class ConfigurationPageTest extends TestBase {
 
 	@AfterMethod
 	public void nteardown() {
+		Printhyphens();
 		AdminHomepage.admin_logout();
 		driver1.close();
 	}
@@ -52,7 +53,26 @@ public class ConfigurationPageTest extends TestBase {
 		return data;
 	}
 	
-	@Test (priority=3,dataProvider = "Agentsdata")
+	@DataProvider
+	 public static Object[][] TransferNodata() {
+		Object data[][] =Testutil.Readexcel1("TransferNumbers");
+		return data;
+	}
+	
+	@DataProvider
+	 public static Object[][] Dispositionsdata() {
+		Object data[][] =Testutil.Readexcel1("Dispositions");
+		return data;
+	}
+	
+	@DataProvider
+	 public static Object[][] PauseReasondata() {
+		Object data[][] =Testutil.Readexcel1("Pause Reasons");
+		return data;
+	}
+	
+	
+	@Test (priority=1,dataProvider = "Agentsdata")
 	public void AddAgents(String act,String id,Object nid, Object lock, Object pwd, Object name,Object pr,Object mail,Object data,Object Skill,Object in, Object man, Object pre, Object prog,Object blend) {
 		if (act.trim().equalsIgnoreCase("ADD")) {
 		String m1=ConfigurationsPage.AddAgent(id,nid, lock, pwd, name, pr, mail, data, Skill, in, man, pre, prog, blend);
@@ -72,12 +92,11 @@ public class ConfigurationPageTest extends TestBase {
 		}
 	}
 	
-	@Test (priority=3,dataProvider = "PhoneNodata")
+	@Test (priority=2,dataProvider = "PhoneNodata")
 	public void AddPhoneNos(String act,Object name, Object Nname,Object pno, Object Nph, Object pr, Object sip) {
 			if (act.trim().equalsIgnoreCase("ADD")) {
 				String m1=ConfigurationsPage.addPhoneNo(name, pno, pr, sip);
 				System.out.println(m1);
-				System.out.println();
 				Assert.assertTrue(m1.contains("success"),"Phone No "+pno +" not added");
 			}
 			else if (act.trim().equalsIgnoreCase("EDIT")) {
@@ -93,5 +112,68 @@ public class ConfigurationPageTest extends TestBase {
 			}
 		
 	}
+	
+	@Test (priority=3,dataProvider = "TransferNodata")
+	public void AddTransferNos(String act,Object name, Object Nname,Object pno, Object Nph, Object sip) {
+			if (act.trim().equalsIgnoreCase("ADD")) {
+				String m1=ConfigurationsPage.AddTransferNumber(name, pno, sip);
+				System.out.println(m1);
+				Assert.assertTrue(m1.contains("success"),"Transfer No "+pno +" not added");
+			}
+			else if (act.trim().equalsIgnoreCase("EDIT")) {
+				String m1=ConfigurationsPage.EditTransferNo(name, Nname, pno, Nph, sip);
+				System.out.println(m1);
+				Assert.assertTrue(m1.contains("success"),"Transfer no "+pno+"  not able to edit");
+			}
+			
+			else if(act.trim().equalsIgnoreCase("DELETE")) {
+				String m2=ConfigurationsPage.deleteTransferNo(name.toString().trim(), pno.toString().trim());
+				System.out.println(m2);
+				Assert.assertTrue(m2.contains("success"),pno+" Phone No not able to delete");
+			}
+		
+	}
+	
+	@Test (priority=4,dataProvider = "Dispositionsdata")
+	public void AddDispositions(String act,String reason, Object reason1) {
+			if (act.trim().equalsIgnoreCase("ADD")) {
+				String m1=ConfigurationsPage.AddDispositions(reason);
+				System.out.println(m1);
+				Assert.assertTrue(m1.contains("success"),reason +" not added");
+			}
+			else if (act.trim().equalsIgnoreCase("EDIT")) {
+				String m1=ConfigurationsPage.EditDispositions(reason, reason1.toString());
+				System.out.println(m1);
+				Assert.assertTrue(m1.contains("success"),reason+"  not able to edit");
+			}
+			
+			else if(act.trim().equalsIgnoreCase("DELETE")) {
+				String m2=ConfigurationsPage.deleteDisposition(reason);
+				System.out.println(m2);
+				Assert.assertTrue(m2.contains("success"),reason+" not able to delete");
+			}
+		}
+	
+	@Test (priority=5,dataProvider = "PauseReasondata")
+	public void AddpauseReasons(String act,String reason, Object reason1, Object time) {
+			if (act.trim().equalsIgnoreCase("ADD")) {
+				String m1=ConfigurationsPage.AddPauseReason(reason, time);
+				System.out.println(m1);
+				Assert.assertTrue(m1.contains("success"),reason +" not added");
+			}
+			else if (act.trim().equalsIgnoreCase("EDIT")) {
+				String m1=ConfigurationsPage.EditPausereason(reason, reason1, time);
+				System.out.println(m1);
+				Assert.assertTrue(m1.contains("success"),reason+"  not able to edit");
+			}
+			
+			else if(act.trim().equalsIgnoreCase("DELETE")) {
+				String m2=ConfigurationsPage.deletePauseReason(reason);
+				System.out.println(m2);
+				Assert.assertTrue(m2.contains("success"),reason+" not able to delete");
+			}
+		}
+	
+	
 	
 }

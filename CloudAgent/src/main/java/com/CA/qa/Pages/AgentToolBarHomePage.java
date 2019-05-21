@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.CA.qa.Base.TestBase;
+import com.CA.qa.Util.Testutil;
 
 public class AgentToolBarHomePage extends TestBase {
 	
@@ -121,7 +122,7 @@ public class AgentToolBarHomePage extends TestBase {
 
 	public void AgentLogout() {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		
+		Testutil.flash(ATBAgent, driver);
 //		if (ATBAgent.isEnabled()) {
 //			
 //		ATBAgent.click();
@@ -136,7 +137,7 @@ public class AgentToolBarHomePage extends TestBase {
 //		}
 //		
 //		else
-		
+			Testutil.flash(ATBlogout, driver);
 		
 			js.executeScript("arguments[0].click();", ATBlogout );
 		

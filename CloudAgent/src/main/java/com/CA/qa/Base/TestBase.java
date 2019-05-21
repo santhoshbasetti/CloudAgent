@@ -99,6 +99,10 @@ public class TestBase {
 		
 	}
 	
+	public void Printhyphens() {
+		System.out.println("--------------------------------------------------------------");
+	}
+	
 	
 	
 	
