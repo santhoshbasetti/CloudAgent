@@ -85,6 +85,9 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(xpath ="//*[@id='wwctrl_agentForm_agentSkills']//ul/li")
 	List<WebElement> Selected_Skills;
 	
+	@FindBy(className="select2-selection__choice__remove")
+	List<WebElement> removing_Skills;
+	
 //	@FindBy(xpath= "//*[@id='select2-agentForm_agentSkills-results']/li")
 //	List<WebElement> AllSkillsSelected;
 	
@@ -135,6 +138,18 @@ public class ConfigurationsPage extends TestBase{
 	
 	@FindBy(id= "pauseReasonForm_pauseReason_reason")
 	WebElement pauseReason_reason;
+	
+	@FindBy(id= "moveAllLeft1")
+	WebElement moveAllLeft1;
+	
+	@FindBy(id= "moveAllRight1")
+	WebElement moveAllRight1;
+	
+	@FindBy(id= "moveRight1")
+	WebElement moveRight1;
+	
+	@FindBy(xpath= "//*[@id='availableSkills']/option")
+	List<WebElement> skills_stage88;
 	
 	@FindBy(id= "pauseReasonForm_pauseReason_formattedTimeLimit")
 	WebElement pauseReason_Time;
@@ -226,14 +241,10 @@ public class ConfigurationsPage extends TestBase{
 	
 	public void EnterSkillsforAgent(Object S) {
 		if(!S.equals("")) {
-			System.out.println("size :"+Selected_Skills.size());
 			if(Selected_Skills.size()>1) {
-				int size = Selected_Skills.size();
-			for (int i=1;i<size;i++)
-			driver1.findElement(By.className("select2-selection__choice__remove")).click();
+				while(removing_Skills.size()>0) 
+				driver1.findElement(By.className("select2-selection__choice__remove")).click();
 			}
-				
-			//System.out.println("selected skill over");
 			if(S.toString().contains(",")) {
 				String words[]=S.toString().split(",");
 				for (String u: words) {
@@ -246,7 +257,7 @@ public class ConfigurationsPage extends TestBase{
 							w.click();}
 						break;
 					} else {
-						//System.out.println(u);
+						System.out.println(u);
 						//Skills.clear();
 						Skills.sendKeys(u);
 						for (WebElement w:AllSkillsList)
@@ -267,6 +278,50 @@ public class ConfigurationsPage extends TestBase{
 			}
 		}
 	}
+	
+	
+	public void EnterSkillsforAgentforStaging88(Object S) {
+		if(!S.equals("")) {
+			moveAllLeft1.click();
+			for (WebElement w:skills_stage88) 
+				w.click();
+			driver1.findElement(By.xpath("//*[@class='am-scroll-top']")).click();
+			
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+			if(S.toString().contains(",")) {
+				String words[]=S.toString().split(",");
+				for (String u: words) {
+					if(u.trim().equalsIgnoreCase("all")) {
+						moveAllRight1.click();
+						break;
+					} 
+					else {
+						for (WebElement w:skills_stage88) {
+							if(w.getText().contains(u)) {
+								w.click();
+								moveRight1.click();
+							}
+						}
+						}
+				}
+			}
+			else if(S.toString().trim().equalsIgnoreCase("all")) 
+				moveAllRight1.click();
+			else {
+				for (WebElement w:skills_stage88) 
+					if(w.getText().contains(S.toString().trim())) {
+					w.click();
+					moveRight1.click();
+					}
+				}
+			}
+	}
+	
 	
 	public void EnableInboundforAgent(Object E) {
 		if(!E.equals("")) {
@@ -362,7 +417,12 @@ public class ConfigurationsPage extends TestBase{
 				EnterPriorityforAgent(pr);
 				EnterEmailforAgent(mail);
 				EnterAgentDataforAgent(data);
+				
+				if(driver1.getCurrentUrl().contains("http://10.1.2.88:8080")) {
+					EnterSkillsforAgentforStaging88(Skill);
+				}else
 				EnterSkillsforAgent(Skill);
+				
 				EnableInboundforAgent(in);
 				EnableManualforAgent(man);
 				EnablePreviewforAgent(pre);
@@ -386,6 +446,7 @@ public class ConfigurationsPage extends TestBase{
 			String H =GetConfigHeader();
 			if(H.contains("Agents")) {
 				EnterSerachItem(idold);
+				if(!driver1.getCurrentUrl().contains("http://10.1.2.88:8080"))
 				ClickOnShowAllButton();
 				if(!Agent_table_data_1stRow.getText().contains("Nothing") ) {
 					Agent_table_data_1stRow.click();
@@ -397,7 +458,12 @@ public class ConfigurationsPage extends TestBase{
 					EnterPriorityforAgent(pr);
 					EnterEmailforAgent(mail);
 					EnterAgentDataforAgent(data);
+					
+					if(driver1.getCurrentUrl().contains("http://10.1.2.88:8080")) {
+						EnterSkillsforAgentforStaging88(Skill);
+					}else
 					EnterSkillsforAgent(Skill);
+					
 					EnableInboundforAgent(in);
 					EnableManualforAgent(man);
 					EnablePreviewforAgent(pre);
@@ -502,7 +568,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("Phone Numbers")) {
 			EnterSerachItem(phno);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				String H1 =GetConfigHeader();
@@ -525,7 +591,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("Phone Numbers")) {
 			EnterSerachItem(phno);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				if(Number_name.getAttribute("value").equalsIgnoreCase(name.trim()) && Number_phoneNumber.getAttribute("value").equalsIgnoreCase(phno.trim())) {
@@ -590,7 +656,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("TransferNumbers")) {
 			EnterSerachItem(phno);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				String H1 =GetConfigHeader();
@@ -612,7 +678,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("TransferNumbers")) {
 			EnterSerachItem(phno);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				if(transferName.getAttribute("value").equalsIgnoreCase(name.trim()) && transferNumber.getAttribute("value").equalsIgnoreCase(phno.trim())) {
@@ -671,7 +737,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("Dispositions")) {
 			EnterSerachItem(reason);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				if(GetConfigHeader().contains("Edit") && disposition_reason.getAttribute("value").equalsIgnoreCase(reason.trim())) {
@@ -723,7 +789,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("Pause Reasons")) {
 			EnterSerachItem(reason);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				if(GetConfigHeader().contains("Edit") && pauseReason_reason.getAttribute("value").equalsIgnoreCase(reason.trim())) {
@@ -743,7 +809,7 @@ public class ConfigurationsPage extends TestBase{
 		String H =GetConfigHeader();
 		if(H.contains("Pause Reasons")) {
 			EnterSerachItem(reason);
-			ClickOnShowAllButton();
+			//ClickOnShowAllButton();
 			if(!table_data_1stRow.getText().contains("Nothing") ) {
 				table_data_1stRow.click();
 				if(GetConfigHeader().contains("Edit") && pauseReason_reason.getAttribute("value").equalsIgnoreCase(reason.trim())) {

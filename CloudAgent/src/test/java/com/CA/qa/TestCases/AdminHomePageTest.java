@@ -79,6 +79,7 @@ public class AdminHomePageTest extends TestBase{
 	@AfterMethod
 	public void teardown() {
 		//driver.quit();
+		System.out.println(driver1.getCurrentUrl());
 		driver1.quit();
 		Printhyphens();
 	}

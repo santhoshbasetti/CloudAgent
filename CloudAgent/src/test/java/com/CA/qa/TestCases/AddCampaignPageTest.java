@@ -53,6 +53,7 @@ public class AddCampaignPageTest extends TestBase{
 		//String skills,String users, String m_name, String path , Object hm, Object tm
 		flag=false;
 		AddCampaignPage =AdminHomepage.clickOnAddCampaignButton(Bound);
+		System.out.println("Campaign details for adding: Name: "+cname+"   Type:"+Bound);
 		
 		if(Bound.trim().equalsIgnoreCase("inbound")) {
 			AddCampaignPage.enterCampaignName(cname);
@@ -72,7 +73,11 @@ public class AddCampaignPageTest extends TestBase{
 			
 			AddCampaignPage.EnterWrapupTime(WT);
 			AddCampaignPage.SelectDisposition(disp);
-			AddCampaignPage.SelectSkills(skills);
+			
+			if(driver1.getCurrentUrl().contains("http://10.1.2.88:8080"))
+				AddCampaignPage.EnterSkillsforStaging88(skills);
+			else AddCampaignPage.SelectSkills(skills);
+			
 			AddCampaignPage.SelectUsers(users);
 			
 			AddCampaignPage.SelectHoldMusic(hm);
@@ -114,7 +119,11 @@ public class AddCampaignPageTest extends TestBase{
 		AddCampaignPage.EnterNoOfTries(tries);
 		
 		AddCampaignPage.SelectDisposition(disp);
-		AddCampaignPage.SelectSkills(skills);
+		
+		if(driver1.getCurrentUrl().contains("http://10.1.2.88:8080"))
+			AddCampaignPage.EnterSkillsforStaging88(skills);
+		else AddCampaignPage.SelectSkills(skills);
+		
 		AddCampaignPage.SelectUsers(users);
 		AddCampaignPage.SelectMapping(m_name);
 		AddCampaignPage.FiletoUpload(path);
@@ -169,6 +178,7 @@ public class AddCampaignPageTest extends TestBase{
 	
 	@AfterMethod
 	public void nteardown() {
+		System.out.println(driver1.getCurrentUrl());
 		AdminHomepage.admin_logout();
 		driver1.close();
 		Printhyphens();

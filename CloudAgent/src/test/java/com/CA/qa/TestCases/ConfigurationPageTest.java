@@ -35,6 +35,7 @@ public class ConfigurationPageTest extends TestBase {
 
 	@AfterMethod
 	public void nteardown() {
+		System.out.println(driver1.getCurrentUrl());
 		Printhyphens();
 		AdminHomepage.admin_logout();
 		driver1.close();

@@ -3,52 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CA.qa.TestCases.AdminHomePageTest">
-        <methods>
-          <include name="verifyOutboundAddCampaignButton"/>
-          <include name="verifyAdminHomePage_TitleTest"/>
-          <include name="verifyAdminLogout"/>
-          <include name="verifyclickingonOutbound"/>
-          <include name="verifyclickingoninbound"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.CA.qa.TestCases.AdminHomePageTest -->
-      <class name="com.CA.qa.TestCases.ConfigurationPageTest">
-        <methods>
-          <include name="nteardown"/>
-          <include name="AddAgents"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.CA.qa.TestCases.ConfigurationPageTest -->
-      <class name="com.CA.qa.TestCases.AgentToolBarHomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="verifyATBHomePage_TitleTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.CA.qa.TestCases.AgentToolBarHomePageTest -->
       <class name="com.CA.qa.TestCases.AddCampaignPageTest">
         <methods>
           <include name="AddCampaign" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="RunCampaign"/>
           <include name="nteardown"/>
+          <include name="DeleteCampaign"/>
         </methods>
       </class> <!-- com.CA.qa.TestCases.AddCampaignPageTest -->
-      <class name="com.CA.qa.TestCases.AdminLoginPageTest">
-        <methods>
-          <include name="verifyAdminLoginPage_TitleTest"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.CA.qa.TestCases.AdminLoginPageTest -->
-      <class name="com.CA.qa.TestCases.AgentToolBarLoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="VerifyATBLoginPage_TitleTest"/>
-        </methods>
-      </class> <!-- com.CA.qa.TestCases.AgentToolBarLoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package com.CA.qa.Pages;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -160,6 +161,18 @@ public class AddCampaignPage extends TestBase{
 //	@FindBy(className= "select2-results__option select2-results__option--highlighted")
 //	WebElement Skill_highlighted;
 	
+	@FindBy(id= "moveAllLeft1")
+	WebElement moveAllLeft1;
+	
+	@FindBy(id= "moveAllRight1")
+	WebElement moveAllRight1;
+	
+	@FindBy(id= "moveRight1")
+	WebElement moveRight1;
+	
+	@FindBy(xpath= "//*[@id='skillList']/option")
+	List<WebElement> skills_stage88;
+		
 	@FindBy(xpath= "//*[@id='wwctrl_campaignForm_campaignSubUsers']//input[@type='search']")
 	WebElement Users_assigned;
 	
@@ -644,6 +657,68 @@ public class AddCampaignPage extends TestBase{
 		}
 	}
 	
+	public void EnterSkillsforStaging88(Object S) {
+		if(!S.equals("")) {
+			((JavascriptExecutor) driver1).executeScript("window.scrollBy(0,-1000)", "");
+			moveAllLeft1.click();
+//			for (WebElement w:skills_stage88) {
+//				System.out.println("skill name:"+w.getText());
+//				w.click();}
+//			((JavascriptExecutor) driver1).executeScript("window.scrollBy(0,-1000)", "");
+//			try {
+//				Thread.sleep(5000);
+//			} catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+//			
+			if(S.toString().contains(",")) {
+				String words[]=S.toString().split(",");
+				for (String u: words) {
+					if(u.trim().equalsIgnoreCase("all")) {
+						((JavascriptExecutor) driver1).executeScript("window.scrollBy(0,-1000)", "");
+						moveAllRight1.click();
+						break;
+					} 
+					else {
+						for (WebElement w:skills_stage88) {
+							if(w.getText().contains(u)) {
+							w.click();
+							((JavascriptExecutor) driver1).executeScript("window.scrollBy(0,-1000)", "");
+							moveRight1.click();
+							}
+						}
+						}
+				}
+			}
+			else if(S.toString().trim().equalsIgnoreCase("all")) {
+				((JavascriptExecutor) driver1).executeScript("window.scrollBy(0,-1000)", "");
+				moveAllRight1.click();}
+			else {
+				for (WebElement w:skills_stage88) {
+					System.out.println("in for loop");
+					if(w.getText().contains(S.toString().trim())) {
+						System.out.println("in if");
+//					driver1.findElement(By.className("am-scroll-top")).click();
+//					try {
+//						Thread.sleep(1000);
+//					} catch (InterruptedException e) {
+//						e.printStackTrace();
+//					}
+//					
+					
+					//((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", moveRight1);	
+					System.out.println("scroll over");
+					w.click();
+					System.out.println("skill click over");
+					((JavascriptExecutor) driver1).executeScript("window.scrollBy(0,-2000)", "");
+					moveRight1.click();
+					System.out.println("move right over");
+					}
+				}
+				}
+			}
+	}
+	
 	public void SelectUsers(Object S) {
 		if(!S.equals("")) {
 			if(S.toString().contains(",")) {
@@ -693,7 +768,6 @@ public class AddCampaignPage extends TestBase{
 	
 	public void FiletoUpload(Object path) {
 		if(!path.equals("")) {
-			//System.out.println("----------------------------------------------------------");
 			try {
 				if(uploadText.isDisplayed()) {
 		((JavascriptExecutor)driver1).executeScript("arguments[0].removeAttribute('style')", uploadFile);
@@ -707,22 +781,32 @@ public class AddCampaignPage extends TestBase{
 	
 	public void SelectHoldMusic(Object H) {
 		if(!H.toString().trim().equals("")) {
-		OnHold.click();
-		OnHold_input.sendKeys(H.toString());
-		select_highlighted.click();
+			try {
+				if(OnHold.isDisplayed()) {
+				OnHold.click();
+				OnHold_input.sendKeys(H.toString());
+				select_highlighted.click();
+				}
+			}catch(NoSuchElementException e) {
+			}
 		}
-		}
+	}
 	
 	public void SelectTransferMusic(Object T) {
 		
 		if(!T.toString().trim().equals("")) {
-			JavascriptExecutor jse = (JavascriptExecutor)driver1;
-			jse.executeScript("scroll(0, 1500)");
-			
-			OnTransfer.click();
-			OnHold_input.sendKeys(T.toString());
-			select_highlighted.click();
-		}}
+			try {
+				if(OnHold.isDisplayed()) {
+				JavascriptExecutor jse = (JavascriptExecutor)driver1;
+				jse.executeScript("scroll(0, 1500)");
+				
+				OnTransfer.click();
+				OnHold_input.sendKeys(T.toString());
+				select_highlighted.click();
+		}}catch(NoSuchElementException e) {
+		}
+	}
+}
 	
 	
 	public void ClickOnSaveCampaign() {

@@ -134,8 +134,10 @@ public class AdminHomePage extends TestBase{
 	}
 	
 	public void ClickOnShowAllButton() {
+		if(!driver1.getCurrentUrl().contains("http://10.1.2.88:8080")) {
 		Select s=new Select(show_button);
 		s.selectByValue("0");
+		}
 	}
 	
 	public void searchDID(String Bound,String D) {
@@ -154,9 +156,9 @@ public class AdminHomePage extends TestBase{
 	
 	public String RunCampaign(String bound,String cName,String Di) {
 		System.out.println("Campaign details to run: name: "+cName+"  type: "+bound);
-		clickOnBound(bound);
-		searchDID(bound,Di);
-		ClickOnShowAllButton();
+//		clickOnBound(bound);
+//		searchDID(bound,Di);
+//		ClickOnShowAllButton();
 		int result_row = IdentifyCampaignRow( bound, cName, Di);
 		
 		if(result_row>0) {
@@ -268,12 +270,13 @@ public class AdminHomePage extends TestBase{
 	
 	public String DeleteCampaign(String bound,String cName, String Di) {
 		System.out.println("Campaign details for deletion: Name:"+cName+"  Type:"+bound);
-		clickOnBound(bound);
-		searchDID(bound,Di);
-		ClickOnShowAllButton();
+//		clickOnBound(bound);
+//		searchDID(bound,Di);
+//		ClickOnShowAllButton();
 		
-		int cam_name_col = returnColumnNoOfTableHeader("Campaign Name");
+		//int cam_name_col = returnColumnNoOfTableHeader("Campaign Name");
 		int result_row = IdentifyCampaignRow(bound,cName, Di);
+		int cam_name_col = returnColumnNoOfTableHeader("Campaign Name");
 		
 		if(result_row>0) {
 			System.out.println(GetCampaignPosition(result_row));
