@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -23,6 +24,13 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static WebDriver driver1;
+	public static int count=40;
+	public static int Intial=1;
+	public static String Customer= "ca_testing";
+	public static String Agent_id= "Ozo";
+	public static String Agent_Pwd= "Ozone#123";
+	public static String Name_for_Agent_PhNo= "Ozone";
+	public static int Agent_Ph_no=95000;
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	//public static WebEventListener eventlistener;
@@ -56,7 +64,13 @@ public class TestBase {
 	public static void ATBLogin() {
 		String browserName= prop.getProperty("Browser");
 		if (browserName.equals("chrome")){
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized"); // open Browser in maximized mode
+			options.addArguments("disable-infobars"); // disabling infobars
+			options.addArguments("--disable-extensions"); // disabling extensions
+			options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+			options.addArguments("--no-sandbox"); // Bypass OS security model
+			driver = new ChromeDriver(options);
 		}
 		
 		e_driver = new EventFiringWebDriver(driver);

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -384,7 +385,7 @@ public class ConfigurationsPage extends TestBase{
 	}
 	
 	public void ClickOnSaveforConfig() {
-		Testutil.flash(config_save_button, driver1);
+		//Testutil.flash(config_save_button, driver1);
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver1;
 		js.executeScript("arguments[0].click();", config_save_button);
@@ -413,6 +414,13 @@ public class ConfigurationsPage extends TestBase{
 				EnterAgentId(id);
 				EnableAgentLock(lock);
 				EnterAgentPassword(pwd);
+				
+				try {
+				if (driver1.findElement(By.xpath("//*[@id=\"parsley-id-5\"]/li")).isDisplayed()) 
+					return "Passed: already exist";
+					}catch(NoSuchElementException e) {
+				}
+								
 				EnterAgentName(name);
 				EnterPriorityforAgent(pr);
 				EnterEmailforAgent(mail);
@@ -429,7 +437,7 @@ public class ConfigurationsPage extends TestBase{
 				EnableProgressiveforAgent(prog);
 				EnableBlendedforAgent(blend);
 				ClickOnSaveforConfig();
-				return Getmessagediv();
+				return "Passed: "+Getmessagediv();
 			}return "header is not displayed as Add Agent";
 		} return "header is not displayed as Agents";
 	}
@@ -546,9 +554,22 @@ public class ConfigurationsPage extends TestBase{
 				EnterNameForPhoneNo(name);
 				EnterNoForPhone(phno);
 				EnterPriorityForPhone(pr);
+				
+				try {
+					if (driver1.findElement(By.xpath("//*[@id=\"parsley-id-7\"]/li")).isDisplayed()) 
+						return "Passed: Ph no already exist";
+						}catch(NoSuchElementException e) {
+					}
+				try {
+					if (driver1.findElement(By.xpath("//*[@id=\"parsley-id-5\"]/li")).isDisplayed()) 
+						return "Passed: name for Ph no already exist";
+						}catch(NoSuchElementException e) {
+					}
+				
+				
 				EnterSIPforPhone(sip) ;
 				ClickOnSaveforConfig();
-				return Getmessagediv();
+				return "Passed: "+Getmessagediv();
 			}	return "header not matching";
 		}return "header not matching";
 	}

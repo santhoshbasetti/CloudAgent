@@ -140,8 +140,11 @@ public class AddCampaignPage extends TestBase{
 	@FindBy(id= "campaignForm_campaign_sla")
 	WebElement WrapupTime;
 
-	@FindBy(xpath= "//*[@id='wwctrl_campaignForm_globalDispositions']//input")
+	@FindBy(xpath= "//*[@id='wwctrl_campaignForm_assignedDispositions']//li/input")
 	WebElement Dispositions;
+	
+	@FindBy(xpath= "//*[@id='ng-app']/body/span/span/div/input[2]")
+	WebElement SelectAllDispositions;
 	
 	//@FindBy(id= "select2-campaignForm_globalDispositions-results")
 	//WebElement AllDispositionsList;
@@ -231,8 +234,10 @@ public class AddCampaignPage extends TestBase{
 			ProgressiveCampaign.click();
 		else if(ctype.toString().contains("IVR") || ctype.toString().equalsIgnoreCase("ivr"))
 			IvrCampaign.click();
-		else if(ctype.toString().contains("Predictive") || ctype.toString().equalsIgnoreCase("predictive"))
+		else if(ctype.toString().contains("Predictive") || ctype.toString().equalsIgnoreCase("predictive")) {
 			PredictiveCampaign.click();
+			driver1.findElement(By.id("campaignForm_campaign_customerRingingTime")).sendKeys("30");
+		}
 		}catch(NoSuchElementException e) {
 		}
 		}
@@ -381,8 +386,12 @@ public class AddCampaignPage extends TestBase{
 	}
 	
 	public void EnterScript(Object s) {
-		if(!s.equals(""))
-		script.sendKeys(s.toString());
+		if(!s.equals("")) {
+			try {
+				if(script.isDisplayed())
+				script.sendKeys(s.toString().trim());
+	}catch(NoSuchElementException e) {}
+	}
 	}
 	
 	public void EnterNoOfTries(Object T) {
@@ -497,6 +506,7 @@ public class AddCampaignPage extends TestBase{
 			JavascriptExecutor js = (JavascriptExecutor)driver1;
 			js.executeScript("arguments[0].click();", DaialcustomerFirst);
 			//DaialcustomerFirst.click();
+			driver1.findElement(By.id("campaignForm_campaign_customerRingingTime")).sendKeys("30");
 		}
 		}catch(NoSuchElementException e) {
 		}else if(E.equalsIgnoreCase("no"))
@@ -609,12 +619,14 @@ public class AddCampaignPage extends TestBase{
 		}
 			else if(D.equalsIgnoreCase("all"))
 		{
-				Dispositions.sendKeys(" ");
+				//Dispositions.sendKeys(" ");
 			//Dispositions.click();
-			for (WebElement w:AllDispositionsList) {
-				if(!w.getText().equals(""))
-				w.click();
-			Dispositions.clear();}
+//			for (WebElement w:AllDispositionsList) {
+//				if(!w.getText().equals(""))
+//				w.click();
+//			Dispositions.clear();}
+				Dispositions.sendKeys(" ");
+				SelectAllDispositions.click();		
 		}
 		else {
 			Dispositions.sendKeys(D);
