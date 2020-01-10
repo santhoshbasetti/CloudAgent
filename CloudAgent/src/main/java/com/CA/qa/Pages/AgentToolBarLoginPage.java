@@ -109,7 +109,7 @@ public class AgentToolBarLoginPage extends TestBase {
 	
 	
 	public AgentToolBarHomePage LoginintoATB( String cus, String id, String ph, String pwd) {
-		//ATBcustomer.clear();
+		ATBcustomer.clear();
 		ATBcustomer.sendKeys(cus);
 		ATBagentid.clear();
 		ATBagentid.sendKeys(id);

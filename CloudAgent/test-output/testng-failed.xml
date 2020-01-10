@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CA.qa.TestCases.AddCampaignPageTest">
+      <class name="com.CA.qa.TestCases.AgentToolBarLoginPageTest">
         <methods>
-          <include name="AddCampaign" invocation-numbers="7"/>
           <include name="setup"/>
-          <include name="nteardown"/>
+          <include name="teardown"/>
+          <include name="verifyATBLoginpage_PhoneNumberInvalidErrMsg"/>
         </methods>
-      </class> <!-- com.CA.qa.TestCases.AddCampaignPageTest -->
+      </class> <!-- com.CA.qa.TestCases.AgentToolBarLoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
