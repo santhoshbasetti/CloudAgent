@@ -89,7 +89,10 @@ public class AddCampaignPage extends TestBase{
 	@FindBy(id= "campaignForm_pluginId")
 	WebElement PlugIn;
 	
-	@FindBy(id= "campaignForm_campaign_script")
+	//@FindBy(id= "campaignForm_campaign_script")
+	//WebElement script;
+	
+	@FindBy(xpath= "//*[@id=\"campaignForm\"]//div[@class=\"note-editable panel-body\"]")
 	WebElement script;
 	
 	@FindBy(id= "campaignForm_campaign_ruleNot")
@@ -822,7 +825,12 @@ public class AddCampaignPage extends TestBase{
 	
 	
 	public void ClickOnSaveCampaign() {
+		JavascriptExecutor js = (JavascriptExecutor) driver1;
+
+		js.executeScript("arguments[0].style.height = '50px'", script);
 		Save_button.click();
+		//document.getElementById(script).style.height = "50px";
+		System.out.println("clicked save");
 	}
 	
 	public void ClickOnCancelCampaign() {

@@ -53,10 +53,10 @@ public class AdminHomePage extends TestBase{
 	@FindBy(id= "pageSize")
 	WebElement show_button;
 	
-	@FindBy(name = "search2")
+	@FindBy(name = "search3")
 	WebElement search_did_inbound;
 	
-	@FindBy(name = "search1")
+	@FindBy(name = "search2")
 	WebElement search_did_outbound;
 	
 	@FindBy(xpath="//*[contains(@onclick,'submit')]")
@@ -202,25 +202,29 @@ public class AdminHomePage extends TestBase{
 	
 	public int IdentifyCampaignRow(String bound,String cName,String Di) {
 		clickOnBound(bound);
+		//System.out.println("clicking on Bound is over");
 		searchDID(bound,Di);
+		//System.out.println("search DID over");
 		ClickOnShowAllButton();
+		//System.out.println("show all over");
 		int result_row =0;
 		int cam_name_col = returnColumnNoOfTableHeader("Campaign Name");
-		
+		//System.out.println("cam_name_col is: "+cam_name_col);
 		int size = AllTableRows.size();
 		//System.out.println("no of rows: "+size);
 		
 		for (int i=1;i<=size;i++) {
-			if(driver1.findElement(By.xpath("//*[@id='campaignList']/tbody/tr[1]/td")).getText().contains("Nothing found to display")) {
+			if(driver1.findElement(By.xpath("//*[@id='campaignList']/tbody/tr[1]/td[1]")).getText().contains("Nothing found to display")) {
 				return -1;
 				}
-			//System.out.println("row "+i+" campaign name: "+driver1.findElement(By.xpath(first+i+second+cam_name_col+third)).getText());
-			if(driver1.findElement(By.xpath(first+i+second+cam_name_col+third)).getText().equals(cName)) {
+			//System.out.println("row "+i+" campaign name with title: "+driver1.findElement(By.xpath(first+i+second+cam_name_col+third)).getAttribute("title"));
+			//System.out.println("row "+i+" campaign name with title: "+driver1.findElement(By.xpath(first+i+second+cam_name_col+third)).getText());
+			if(driver1.findElement(By.xpath(first+i+second+cam_name_col+third)).getAttribute("title").equals(cName) || driver1.findElement(By.xpath(first+i+second+cam_name_col+third)).getText().equals(cName)) {
 				result_row=i;
 				//System.out.println("result row is:"+result_row);
 				return result_row;}
 		}
-		return -1;
+		return -2;
 	}
 	
 	public String GetCampaignPosition(int result_row) {
@@ -276,10 +280,12 @@ public class AdminHomePage extends TestBase{
 		
 		//int cam_name_col = returnColumnNoOfTableHeader("Campaign Name");
 		int result_row = IdentifyCampaignRow(bound,cName, Di);
+		//System.out.println("result_row is: "+result_row);
 		int cam_name_col = returnColumnNoOfTableHeader("Campaign Name");
+		//System.out.println("cam_name_col is : "+cam_name_col);
 		
 		if(result_row>0) {
-			System.out.println(GetCampaignPosition(result_row));
+			System.out.println("Campaign position: "+GetCampaignPosition(result_row));
 			
 			if(GetCampaignPosition(result_row).equals("RUNNING")) { 
 				System.out.println(StopCampaign( bound, cName, Di));
