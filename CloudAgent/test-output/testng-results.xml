@@ -1,1621 +1,866 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="3" failed="0" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-14T14:22:10Z" name="Default suite" finished-at="2020-01-14T14:23:36Z" duration-ms="85955">
+  <suite started-at="2020-02-14T10:38:33Z" name="Default suite" finished-at="2020-02-14T10:39:02Z" duration-ms="29808">
     <groups>
     </groups>
-    <test started-at="2020-01-14T14:22:10Z" name="Default test" finished-at="2020-01-14T14:23:36Z" duration-ms="85955">
-      <class name="com.CA.qa.TestCases.AddCampaignPageTest">
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:11Z" name="setup" finished-at="2020-01-14T14:22:15Z" duration-ms="4371" status="PASS">
+    <test started-at="2020-02-14T10:38:33Z" name="Default test" finished-at="2020-02-14T10:39:02Z" duration-ms="29808">
+      <class name="com.CA.qa.TestCases.AgentToolBarHomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:33Z" name="setup" finished-at="2020-02-14T10:38:38Z" duration-ms="5345" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
+                <![CDATA[public void com.CA.qa.TestCases.AgentToolBarHomePageTest.verifyATBHomePage_TitleTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:15Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:22:23Z" duration-ms="7729" status="PASS">
+        <test-method signature="verifyATBHomePage_TitleTest()[pri:1, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:38Z" name="verifyATBHomePage_TitleTest" finished-at="2020-02-14T10:38:38Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyATBHomePage_TitleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:38Z" name="teardown" finished-at="2020-02-14T10:38:41Z" duration-ms="3031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:41Z" name="setup" finished-at="2020-02-14T10:38:45Z" duration-ms="4366" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[1111111]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Client&Server]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[API]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:23Z" name="nteardown" finished-at="2020-01-14T14:22:23Z" duration-ms="373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:23Z" name="setup" finished-at="2020-01-14T14:22:28Z" duration-ms="4356" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
+                <![CDATA[public void com.CA.qa.TestCases.AgentToolBarHomePageTest.verifyAgentStatusTestAtStart()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:28Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:22:33Z" duration-ms="5584" status="PASS">
+        <test-method signature="verifyAgentStatusTestAtStart()[pri:2, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:45Z" name="verifyAgentStatusTestAtStart" finished-at="2020-02-14T10:38:45Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAgentStatusTestAtStart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:45Z" name="teardown" finished-at="2020-02-14T10:38:48Z" duration-ms="3029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:48Z" name="setup" finished-at="2020-02-14T10:38:53Z" duration-ms="4369" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi3]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111112]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Client side OnBusy]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[NO]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[Toolbar]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:33Z" name="nteardown" finished-at="2020-01-14T14:22:34Z" duration-ms="411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:34Z" name="setup" finished-at="2020-01-14T14:22:37Z" duration-ms="3954" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
+                <![CDATA[public void com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentStatusToPause()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:37Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:22:44Z" duration-ms="6372" status="PASS">
+        <test-method signature="VerifyAgentStatusToPause()[pri:3, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:53Z" name="VerifyAgentStatusToPause" finished-at="2020-02-14T10:38:57Z" duration-ms="4587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgentStatusToPause -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:38:57Z" name="teardown" finished-at="2020-02-14T10:39:00Z" duration-ms="3016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:00Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="1891" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111113]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Server side]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[NONE]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
+                <![CDATA[public void com.CA.qa.TestCases.AgentToolBarHomePageTest.VerifyAgentStatusToReady()]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:44Z" name="nteardown" finished-at="2020-01-14T14:22:44Z" duration-ms="389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:44Z" name="setup" finished-at="2020-01-14T14:22:48Z" duration-ms="3503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
-              </value>
-            </param>
-          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:48Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:22:54Z" duration-ms="6305" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111114]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Server side OnBusy]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[NO]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[no]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[API]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="VerifyAgentStatusToReady()[pri:4, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentStatusToReady" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:54Z" name="nteardown" finished-at="2020-01-14T14:22:54Z" duration-ms="443" status="PASS">
+        </test-method> <!-- VerifyAgentStatusToReady -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:54Z" name="setup" finished-at="2020-01-14T14:22:58Z" duration-ms="3102" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:22:58Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:23:04Z" duration-ms="6489" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi6]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111115]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Plugin]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[NO]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[no]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[Toolbar]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="VerifyAgentModeAtStart()[pri:5, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentModeAtStart" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:04Z" name="nteardown" finished-at="2020-01-14T14:23:05Z" duration-ms="472" status="PASS">
+        </test-method> <!-- VerifyAgentModeAtStart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:05Z" name="setup" finished-at="2020-01-14T14:23:08Z" duration-ms="3261" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:08Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:23:14Z" duration-ms="6375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi7]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111116]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Client side]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[NO]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[no]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[NONE]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="VerifyAgentModeAfterManual()[pri:6, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentModeAfterManual" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:14Z" name="nteardown" finished-at="2020-01-14T14:23:15Z" duration-ms="466" status="PASS">
+        </test-method> <!-- VerifyAgentModeAfterManual -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:15Z" name="setup" finished-at="2020-01-14T14:23:18Z" duration-ms="3546" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:18Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:23:24Z" duration-ms="6220" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi8]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111117]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Client&Server]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[NO]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[no]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[Toolbar]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="VerifyAgentModeAfterInbound()[pri:7, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentModeAfterInbound" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:24Z" name="nteardown" finished-at="2020-01-14T14:23:25Z" duration-ms="408" status="PASS">
+        </test-method> <!-- VerifyAgentModeAfterInbound -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nteardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:25Z" name="setup" finished-at="2020-01-14T14:23:29Z" duration-ms="4375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.CA.qa.TestCases.AddCampaignPageTest.DeleteCampaign(java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeleteCampaign(java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)[pri:3, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:29Z" name="DeleteCampaign" data-provider="CampaignCreationdata" finished-at="2020-01-14T14:23:35Z" duration-ms="6198" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[inbound]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sannn1_inbound_newUi9]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[11111118]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[padma]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[sdnv jsj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3:2]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[50.0]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[01:02:03]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[04:05:06]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[12]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[Client&Server]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[urlll]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[sans]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[No]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[NO]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[no]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[YES]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[API]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[all]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[phone]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[path]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="VerifyAgentModeAfterPreview()[pri:8, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentModeAfterPreview" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteCampaign -->
-        <test-method is-config="true" signature="nteardown()[pri:0, instance:com.CA.qa.TestCases.AddCampaignPageTest@1ab3a8c8]" started-at="2020-01-14T14:23:35Z" name="nteardown" finished-at="2020-01-14T14:23:36Z" duration-ms="537" status="PASS">
+        </test-method> <!-- VerifyAgentModeAfterPreview -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nteardown -->
-      </class> <!-- com.CA.qa.TestCases.AddCampaignPageTest -->
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyAgentModeAfterProgressive()[pri:9, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentModeAfterProgressive" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgentModeAfterProgressive -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyAgentModeAfterBlended()[pri:10, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentModeAfterBlended" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgentModeAfterBlended -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="setup" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyAgentATBForceRelease()[pri:11, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="VerifyAgentATBForceRelease" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926),platform=Linux 4.15.0-76-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'ozonetel-Vostro-270s', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-76-generic', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:40675}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=LINUX, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.46.628388 (4a34a70827ac54148e092aafb70504c4ea7ae926), userDataDir=/tmp/.org.chromium.Chromium.0Jh3QV}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.80, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d07320512a8fff5cd4952119929e46e9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+at com.sun.proxy.$Proxy10.get(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+at com.CA.qa.Base.TestBase.ATBLogin(TestBase.java:87)
+at com.CA.qa.TestCases.AgentToolBarHomePageTest.setup(AgentToolBarHomePageTest.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgentATBForceRelease -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.CA.qa.TestCases.AgentToolBarHomePageTest@498d318c]" started-at="2020-02-14T10:39:02Z" name="teardown" finished-at="2020-02-14T10:39:02Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.CA.qa.TestCases.AgentToolBarHomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

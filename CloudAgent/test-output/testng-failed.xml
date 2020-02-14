@@ -3,13 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CA.qa.TestCases.AddCampaignPageTest">
+      <class name="com.CA.qa.TestCases.AgentToolBarHomePageTest">
         <methods>
+          <include name="VerifyAgentModeAfterBlended"/>
+          <include name="VerifyAgentModeAfterPreview"/>
+          <include name="VerifyAgentModeAfterInbound"/>
+          <include name="VerifyAgentModeAtStart"/>
+          <include name="VerifyAgentStatusToReady"/>
+          <include name="VerifyAgentModeAfterProgressive"/>
+          <include name="VerifyAgentModeAfterManual"/>
+          <include name="VerifyAgentATBForceRelease"/>
           <include name="setup"/>
-          <include name="nteardown"/>
-          <include name="DeleteCampaign" invocation-numbers="0 1 2"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.CA.qa.TestCases.AddCampaignPageTest -->
+      </class> <!-- com.CA.qa.TestCases.AgentToolBarHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

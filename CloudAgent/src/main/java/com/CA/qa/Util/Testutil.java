@@ -28,7 +28,7 @@ public class Testutil extends TestBase{
 	
 	public static long PAGE_LOAD_TIME = 100;
 	
-	public static long IMPLICIT_WAIT_TIME = 10;
+	public static long IMPLICIT_WAIT_TIME = 15;
 	
 	public static long IMPLICIT_WAIT_TIME_admin = 10;
 	

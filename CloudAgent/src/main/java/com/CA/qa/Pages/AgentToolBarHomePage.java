@@ -1,6 +1,8 @@
 package com.CA.qa.Pages;
 
 
+
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -76,14 +78,29 @@ public class AgentToolBarHomePage extends TestBase {
 
 	public void ATBchangeToReady() {
 		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(ATBagentchangeStatus));
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(ATBagentchangeStatus));
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(ATBagentchangeStatus));
 		
-		ATBagentchangeStatus.click();
+		//ATBagentchangeStatus.click();
+		js.executeScript("arguments[0].click();", ATBagentchangeStatus);
+		//System.out.println("change status clicked");
 		js.executeScript("arguments[0].click();", ATBChangeStatusToReady);
 		//ATBChangeStatusToReady.click();
-			
-	}
+		//System.out.println("ready clicked");
+		//System.out.println(System.currentTimeMillis());
+		//System.out.println("status 1is: "+ATBagentStatus.getText());
+		WebDriverWait w= new WebDriverWait(driver,20);
+		w.until(ExpectedConditions.textToBePresentInElement(ATBagentStatus, "READY"));
+		//System.out.println(System.currentTimeMillis());
+		//System.out.println("status 2is: "+ATBagentStatus.getText());
+		}
 	
 	public void ATBchangeToPause() {
 		
@@ -116,7 +133,9 @@ public class AgentToolBarHomePage extends TestBase {
 		}
 		
 		js.executeScript("arguments[0].click();", Pause_Done);
-				
+		//System.out.println("status 3is: "+ATBagentStatus.getText());
+		new WebDriverWait(driver, 20).until(ExpectedConditions.textToBePresentInElement(ATBagentStatus, "PAUSED"));
+		//System.out.println("status 4is: "+ATBagentStatus.getText());		
 	}
 	
 
@@ -141,7 +160,10 @@ public class AgentToolBarHomePage extends TestBase {
 		
 			js.executeScript("arguments[0].click();", ATBlogout );
 		
-		
+//			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+//					.withTimeout(30, TimeUnit.SECONDS)
+//					.pollingEvery(300, TimeUnit.MILLISECONDS)
+//					.ignoring(NoSuchElementException.class);
 		
 	}
 	

@@ -106,6 +106,12 @@ public class AdminHomePage extends TestBase{
 	}
 
 	public void admin_logout() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Admin_usericon.click();
 		Admin_signout.click();
 		
