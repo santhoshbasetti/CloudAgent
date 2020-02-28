@@ -3,20 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CA.qa.TestCases.AgentToolBarHomePageTest">
+      <class name="com.CA.qa.TestCases.ValidateConfigurationsPage">
         <methods>
-          <include name="VerifyAgentModeAfterBlended"/>
-          <include name="VerifyAgentModeAfterPreview"/>
-          <include name="VerifyAgentModeAfterInbound"/>
-          <include name="VerifyAgentModeAtStart"/>
-          <include name="VerifyAgentStatusToReady"/>
-          <include name="VerifyAgentModeAfterProgressive"/>
-          <include name="VerifyAgentModeAfterManual"/>
-          <include name="VerifyAgentATBForceRelease"/>
           <include name="setup"/>
-          <include name="teardown"/>
+          <include name="ValidateAgentDataSplRangeErrorMsg"/>
         </methods>
-      </class> <!-- com.CA.qa.TestCases.AgentToolBarHomePageTest -->
+      </class> <!-- com.CA.qa.TestCases.ValidateConfigurationsPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -25,6 +25,13 @@ public class TestBase {
 	public static WebDriver driver;
 	public static WebDriver driver1;
 	public static int count=40;
+	public static int row_no=0;
+	public static int Agents_count=0;
+	public static int Phno_count=0;
+	public static int TransNo_count=0;
+	public static int Disp_count=0;
+	public static int Pause_count=0;
+	
 	public static int Intial=1;
 	public static String Customer= "ca_testing";
 	public static String Agent_id= "Ozo";

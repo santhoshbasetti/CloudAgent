@@ -1,7 +1,9 @@
 package com.CA.qa.Util;
 
+
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.text.DateFormat;
@@ -12,10 +14,13 @@ import java.util.Iterator;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.usermodel.IndexedColors;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -162,6 +167,91 @@ public class Testutil extends TestBase{
 
 	  	}
     
+    
+    public static void ClearDataInResultColumn(String sheetname){
+    	String filepath = System.getProperty("user.dir")+"/src/main/java/com/CA/qa/TestData/CloudAgent.xlsx";
+
+	     FileInputStream fis = null;
+	     XSSFWorkbook wb = null;
+	     //Cell cell1=null;
+	     int res_col=0;
+		try {
+			fis = new FileInputStream(filepath);
+			wb = new XSSFWorkbook(fis);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    
+	     XSSFSheet  sheet =  wb.getSheet(sheetname);
+	     for(int i=0;i<sheet.getRow(0).getLastCellNum();i++)
+	    	 if(sheet.getRow(0).getCell(i).getStringCellValue().equalsIgnoreCase("Results")) {
+	    			 res_col =i; 
+	    			 break;
+	    	 }
+	     //System.out.println("res_col is : "+res_col);
+	     //System.out.println("total rows: "+sheet.getLastRowNum());
+	     for(int i=1;i<=sheet.getLastRowNum();i++) {
+	    	 sheet.getRow(i).createCell(res_col);
+	    	 sheet.getRow(i).getCell(res_col).setCellValue("");
+	    	 //System.out.println("for row: "+i+" data cleared");
+	     }
+	     
+	     try {
+			fis.close();
+			 FileOutputStream outputStream = new FileOutputStream(filepath);
+		     wb.write(outputStream);
+		     outputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	     
+	    
+	 	
+	     //return res_col;
+    	
+	     }
+    public static void WriteDataToexcel(String sheetname,int row_no,String data){
+    	String filepath = System.getProperty("user.dir")+"/src/main/java/com/CA/qa/TestData/CloudAgent.xlsx";
+
+	     FileInputStream fis = null;
+	     XSSFWorkbook wb = null;
+	     int res_col=0;
+	     //Cell cell1=null;
+	    
+		try {
+			fis = new FileInputStream(filepath);
+			wb = new XSSFWorkbook(fis);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    
+	     XSSFSheet  sheet =  wb.getSheet(sheetname);
+	     for(int i=0;i<sheet.getRow(0).getLastCellNum();i++)
+	    	 if(sheet.getRow(0).getCell(i).getStringCellValue().equalsIgnoreCase("Results")) {
+	    			 res_col =i; 
+	    			 break;
+	    	 }
+	     //cell1=sheet.getRow(row_no).createCell(res_col);
+	     sheet.getRow(row_no).getCell(res_col).setCellValue(data.trim());
+	     
+//	     CellStyle style = wb.createCellStyle();
+//		    //style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
+//		    //style.setFillPattern(CellStyle.SOLID_FOREGROUND);
+//		    Font font = wb.createFont();
+//	            font.setColor(IndexedColors.RED.getIndex());
+//	            style.setFont(font);
+//	            style.setWrapText(true);
+//	          cell1.setCellStyle(style);  
+	     try {
+				fis.close();
+				 FileOutputStream outputStream = new FileOutputStream(filepath);
+			     wb.write(outputStream);
+			     outputStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+	     
+    }
     
     
 }

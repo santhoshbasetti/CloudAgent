@@ -21,58 +21,32 @@ public class try11 extends TestBase{
 		super();
 	}
 
-	@BeforeMethod
-	public void setup(Method method) {
-		System.out.println("Test name: " + method.getName());
-		ATBLogin();
-		ATBloginpage = new AgentToolBarLoginPage();
-		ATBHomePage = ATBloginpage.LoginintoATB(Testutil.Readexcel("AgentLogin",1 ).get(0), Testutil.Readexcel("AgentLogin",2 ).get(0), Testutil.Readexcel("AgentLogin",3 ).get(0), Testutil.Readexcel("AgentLogin",4 ).get(0));
+//	@BeforeMethod
+//	public void setup(Method method) {
+//		System.out.println("Test name: " + method.getName());
+//		ATBLogin();
+//		ATBloginpage = new AgentToolBarLoginPage();
+//		ATBHomePage = ATBloginpage.LoginintoATB(Testutil.Readexcel("AgentLogin",1 ).get(0), Testutil.Readexcel("AgentLogin",2 ).get(0), Testutil.Readexcel("AgentLogin",3 ).get(0), Testutil.Readexcel("AgentLogin",4 ).get(0));
+//		
+//		}
+//	@AfterMethod
+//	public void teardown() {
+//		ATBHomePage.AgentLogout();
+//		driver.quit();
+//		//driver1.quit();
+//		Printhyphens();
+//	}
+	
+	@Test( priority =3)
+    public void VerifyAgentStatusToPause() {
+		Testutil.ClearDataInResultColumn("Pause Reasons");
+		//PhoneNumber  TransferNumbers   Dispositions  Pause Reasons
+		Testutil.WriteDataToexcel("Pause Reasons", 1,"pan");
+		//System.out.println("------------------------------------");
+		Testutil.WriteDataToexcel("Pause Reasons", 2,"san successfully");
+		//Testutil.WriteDataToexcel("Pause Reasons", 3,"pan");
+		//Testutil.WriteDataToexcel("Pause Reasons", 4,"san successfully");
 		
-		}
-	@AfterMethod
-	public void teardown() {
-		ATBHomePage.AgentLogout();
-		driver.quit();
-		//driver1.quit();
-		Printhyphens();
 	}
 	
-	@Test( priority =3,invocationCount=10)
-    public void VerifyAgentStatusToPause() {
-		ATBHomePage.ATBchangeToReady();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		
-		ATBHomePage.ATBchangeToPause();
-		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		
-		//new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOf(ATBagentStatus));
-		String agent_status = ATBHomePage.ATBagentStatus();
-		Assert.assertEquals(agent_status, "PAUSED");
-			
-	}
-	@Test( priority =4,invocationCount=10)
-	public void VerifyAgentStatusToReady() {
-		ATBHomePage.ATBchangeToReady();
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String agent_status = ATBHomePage.ATBagentStatus();
-		Assert.assertEquals(agent_status, "READY");
-		//System.out.println("passed status");	
-		
-	}
 }

@@ -1040,58 +1040,92 @@ public class AddCampaignPage extends TestBase{
 		Cancel_button.click();
 	}
 
-public String getCampaignNameError() {
-		
-		return CampaignName_error.getText();
+	public String getCampaignNameError() {
+		try {
+			if(CampaignName_error.isDisplayed())
+				return CampaignName_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getCampaignTypeError() {
-		
-		return CampaignType_error.getText();
+		try {
+			if(CampaignType_error.isDisplayed())
+				return CampaignType_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getDidError() {
-		
-		return DID_error.getText();
+		try {
+			if(DID_error.isDisplayed())
+				return DID_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getStartTimeError() {
-		
-		return StartTime_error.getText();
+		try {
+			if(StartTime_error.isDisplayed())
+				return StartTime_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getEndTimeError() {
-		
-		return EndTime_error.getText();
+		try {
+			if(EndTime_error.isDisplayed())
+				return EndTime_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getPriorityError() {
-		
-		return Priority_error.getText();
+		try {
+			if(Priority_error.isDisplayed())
+				return Priority_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
+	
 	public String getTriesError() {
-		
-		return Tries_error.getText();
+		try {
+			if(Tries_error.isDisplayed())
+				return Tries_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 
 	public String getWrapupError() {
-		
-		return Wrapup_error.getText();
+		try {
+			if(Wrapup_error.isDisplayed())
+				return Wrapup_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getDispositionsError() {
-		
-		return Dispositions_error.getText();
+		try {
+			if(Dispositions_error.isDisplayed())
+				return Dispositions_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getSkillsError() {
-		
-		return Skills_error.getText();
+		try {
+			if(Skills_error.isDisplayed())
+				return Skills_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getMappingError() {
-		
-		return Mapping_error.getText();
+		try {
+			if(Mapping_error.isDisplayed())
+				return Mapping_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getMappingNameError() {
@@ -1138,45 +1172,110 @@ public String getCampaignNameError() {
 	}
 	
 	public String getDialIntervalError() {
-		
-		return DialInterval_error.getText();
+		try {
+			if(DialInterval_error.isDisplayed())
+				return DialInterval_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 
 	public String getUploadError() {
-		
-		return Upload_error.getText();
+		try {
+			if(Upload_error.isDisplayed())
+				return Upload_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getAppURLError() {
-		
-		return AppURL_error.getText();
+		try {
+			if(AppURL_error.isDisplayed())
+				return AppURL_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getConcurrentCallsError() {
-		
-		return ConcurrentCalls_error.getText();
+		try {
+			if(ConcurrentCalls_error.isDisplayed())
+				return ConcurrentCalls_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getCustomerRingingTimeError() {
-		
-		return CustomerRingingTime_error.getText();
+		try {
+			if(CustomerRingingTime_error.isDisplayed())
+				return CustomerRingingTime_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getMaxDropRatioError() {
-		
-		return MaxDropRatio_error.getText();
+		try {
+			if(MaxDropRatio_error.isDisplayed())
+				return MaxDropRatio_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 	
 	public String getPluginNameError() {
-		
-		return PluginName_error.getText();
+		try {
+			if(PluginName_error.isDisplayed())
+				return PluginName_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 
 	public String getPacingRatioError() {
-		
-		return PacingRatio_error.getText();
+		try {
+			if(PacingRatio_error.isDisplayed())
+				return PacingRatio_error.getText();
+		}catch(NoSuchElementException e) {
+		}return "";
 	}
 
+	public String ConsolidatedErrorMessage(){
+		String Con_err_msg= getCampaignNameError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getCampaignTypeError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getDidError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getStartTimeError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getEndTimeError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getPriorityError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getPluginNameError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getTriesError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getWrapupError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getDispositionsError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getSkillsError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getMappingError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getUploadError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getDialIntervalError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getAppURLError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getConcurrentCallsError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getCustomerRingingTimeError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getPacingRatioError();
+		if(Con_err_msg.trim().equals(""))
+			Con_err_msg =Con_err_msg+getMaxDropRatioError();
+		
+			return Con_err_msg;
+	}
 
 
 

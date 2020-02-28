@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.CA.qa.Base.TestBase;
+import com.CA.qa.Util.Testutil;
 
 public class AdminHomePage extends TestBase{
 
@@ -117,19 +119,30 @@ public class AdminHomePage extends TestBase{
 		
 	}
 	public AddCampaignPage clickOnAddCampaignButton(String C) {
+		Testutil.flash(CampaignMenu, driver1);
 		CampaignMenu.click();
+		//System.out.println("CLICKED MENU");
 		if(C.contains("inbound")|| C.equalsIgnoreCase("inbound"))
 			Inboundcampaign.click();
-		else if(C.contains("outbound")|| C.equalsIgnoreCase("outbound"))
+		else if(C.contains("outbound")|| C.equalsIgnoreCase("outbound")) {
+			Testutil.flash(outboundcampaign, driver1);
 			outboundcampaign.click();
+		}
+		//System.out.println("CLICKED CAMPAIGN");
+		new WebDriverWait(driver1, 20).until(ExpectedConditions.titleIs("Campaigns"));
 		Add_Campaign.click();
+		//System.out.println("CLICKED ON ADD BUTTON");
 		return new AddCampaignPage();
 	}
 	
 	public String Getmessagediv() {
-		new WebDriverWait(driver1, 20).until(ExpectedConditions.visibilityOf(div_message));
-		return div_message.getText();
-	}
+		try {
+			//new WebDriverWait(driver1, 20).until(ExpectedConditions.visibilityOf(div_message));
+			if(div_message.isDisplayed())
+				return div_message.getText();
+	}catch(NoSuchElementException e) {
+	}return "success";
+}
 	
 	public void clickOnBound(String C) {
 		CampaignMenu.click();

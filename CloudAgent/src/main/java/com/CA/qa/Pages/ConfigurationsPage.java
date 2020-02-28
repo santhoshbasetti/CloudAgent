@@ -17,6 +17,9 @@ import com.CA.qa.Util.Testutil;
 
 public class ConfigurationsPage extends TestBase{
 
+	@FindBy(id= "MainMenu")
+	WebElement Admin_home;
+	
 	@FindBy(id= "ConfigurationMenu")
 	WebElement ConfigurationMenu;
 	
@@ -106,6 +109,27 @@ public class ConfigurationsPage extends TestBase{
 	
 	@FindBy(id= "agentForm_agent_blended")
 	WebElement Agent_Blended;
+	
+	@FindBy(id= "parsley-id-5")
+	WebElement Agent_Id_Err;
+	
+	@FindBy(id= "parsley-id-10")
+	WebElement Agent_pwd_Err;
+	
+	@FindBy(id= "parsley-id-12")
+	WebElement Agent_name_Err;
+	
+	@FindBy(id= "parsley-id-14")
+	WebElement Agent_priority_Err;
+	
+	@FindBy(id= "parsley-id-16")
+	WebElement Agent_email_Err;
+	
+	@FindBy(id= "parsley-id-18")
+	WebElement Agent_data_Err;
+	
+	@FindBy(id= "parsley-id-multiple-agentModes")
+	WebElement Agent_mode_Err;
 	
 	@FindBy(id= "fwpNumberForm_fwpNumber_name")
 	WebElement Number_name;
@@ -391,6 +415,81 @@ public class ConfigurationsPage extends TestBase{
 		js.executeScript("arguments[0].click();", config_save_button);
 		}
 	
+	public String GetAgentIdErrorMessage() {
+		try{
+			if(Agent_Id_Err.isDisplayed())
+				return	Agent_Id_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentPasswordErrorMessage() {
+		try{
+			if(Agent_pwd_Err.isDisplayed())
+				return	Agent_pwd_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentNameErrorMessage() {
+		try{
+			if(Agent_name_Err.isDisplayed())
+				return	Agent_name_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentPriorityErrorMessage() {
+		try{
+			if(Agent_priority_Err.isDisplayed())
+				return	Agent_priority_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentEmailErrorMessage() {
+		try{
+			if(Agent_email_Err.isDisplayed())
+				return	Agent_email_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentDataErrorMessage() {
+		try{
+			if(Agent_data_Err.isDisplayed())
+				return	Agent_data_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentModeErrorMessage() {
+		try{
+			if(Agent_mode_Err.isDisplayed())
+				return	Agent_mode_Err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentConsolidatedErrorMessage() {
+		String con_agent_err_msg="";
+			con_agent_err_msg = GetAgentIdErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetAgentPasswordErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetAgentNameErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetAgentPriorityErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetAgentEmailErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetAgentDataErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetAgentModeErrorMessage();
+		return con_agent_err_msg;
+		
+	}
+	
 	public void ClickOnShowAllButton() {
 		Select s=new Select(show_button);
 		s.selectByValue("0");
@@ -437,7 +536,15 @@ public class ConfigurationsPage extends TestBase{
 				EnableProgressiveforAgent(prog);
 				EnableBlendedforAgent(blend);
 				ClickOnSaveforConfig();
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				if(driver1.getTitle().equals("Agents"))
 				return "Passed: "+Getmessagediv();
+				else return GetAgentConsolidatedErrorMessage();
 			}return "header is not displayed as Add Agent";
 		} return "header is not displayed as Agents";
 	}
