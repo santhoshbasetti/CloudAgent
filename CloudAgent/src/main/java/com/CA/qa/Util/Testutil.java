@@ -265,7 +265,7 @@ public class Testutil extends TestBase{
 	     
     }
     
-public static String sendGET(String ApiServer, String API_URL,Object ApiKey, Object UserName, Object AgentId, Object cam_name, Object cus_no, Object ucid, Object uui, Object format, Object NMA_avai, Object NMC_avail, String Exp_res, String res )  {
+public static String sendGET(String ApiServer, String API_URL,Object ApiKey, Object UserName, Object AgentId, Object cam_name, Object cus_no, Object ucid, Object ph_name, Object DID, Object uui, Object format, Object NMA_avai, Object NMC_avail, String Exp_res, String res )  {
 		
 //CAServices/AgentManualDial.php?api_key=&username=&agentID=&campaignName=&customerNumber=&UCID=&uui=&format=
 	
@@ -291,7 +291,7 @@ public static String sendGET(String ApiServer, String API_URL,Object ApiKey, Obj
 //		String Format="Json";
 //		String reportType ="currentday";
 		//String Sno, String ApiServer, String API_URL,Object ApiKey, Object UserName, Object AgentId, 
-		//Object cam_name, Object cus_name, Object ucid, Object uui, Object format, Object NMA_avai, 
+		//Object cam_name, Object cus_name, Object ucid,Object ph_name, Object DID, Object uui, Object format, Object NMA_avai, 
 		//Object NMC_avail, String Exp_res, String res 
 		
 		
@@ -308,10 +308,14 @@ public static String sendGET(String ApiServer, String API_URL,Object ApiKey, Obj
 				url =url+arr[i]+AgentId+"&";
 			else if(arr[i].contains("campaignName")) 
 				url =url+arr[i]+cam_name+"&";
-			else if(arr[i].contains("customerNumber")) 
+			else if(arr[i].contains("customerNumber") || arr[i].contains("custNumber")) 
 				url =url+arr[i]+cus_no+"&";
 			else if(arr[i].contains("UCID") || arr[i].contains("ucid")) 
 				url =url+arr[i]+ucid+"&";
+			else if(arr[i].contains("phoneName")) 
+				url =url+arr[i]+ph_name+"&";
+			else if(arr[i].contains("did")) 
+				url =url+arr[i]+DID+"&";
 			else if(arr[i].contains("uui")) 
 				url =url+arr[i]+uui+"&";
 			else if(arr[i].contains("format")) 
@@ -362,12 +366,12 @@ public static String sendGET(String ApiServer, String API_URL,Object ApiKey, Obj
 			in.close();
 
 			// print result
-			//System.out.println(response.toString());
+			System.out.println(response.toString());
 			//return   response.toString();
 		}
 		if(NMA_avai.toString().equalsIgnoreCase("yes")) {
 			try {
-				Thread.sleep(3000);
+				Thread.sleep(600000);
 			} catch (InterruptedException e) {			
 			}
 			if(ATBHomePage.ATBagentStatus().contains("Dialing"))
