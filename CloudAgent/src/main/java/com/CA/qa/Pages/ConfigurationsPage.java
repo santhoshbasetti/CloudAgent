@@ -35,6 +35,9 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(id= "TransferNumberMenu")
 	WebElement TransferNumberMenu;
 	
+	@FindBy(id= "SkillMenu")
+	WebElement SkillMenu;
+	
 	@FindBy(id= "DispositionMenu")
 	WebElement DispositionMenu;
 	
@@ -131,6 +134,24 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(id= "parsley-id-multiple-agentModes")
 	WebElement Agent_mode_Err;
 	
+	@FindBy(id= "agentGroupForm_agentGroup_name")
+	WebElement AgentGroup_Name;
+	
+	@FindBy(id= "agentGroupForm_agentGroup_description")
+	WebElement AgentGroup_description;
+
+	@FindBy(id= "parsley-id-5")
+	WebElement AgentGroup_Name_err;
+
+	@FindBy(id= "parsley-id-7")
+	WebElement AgentGroup_description_err;
+	
+	@FindBy(id= "parsley-id-multiple-assignedAgents")
+	WebElement AgentGroup_assignedAgents_err;
+
+	@FindBy(id= "parsley-id-multiple-assignedUsers")
+	WebElement AgentGroup_assignedUsers_err;
+		
 	@FindBy(id= "fwpNumberForm_fwpNumber_name")
 	WebElement Number_name;
 	
@@ -146,6 +167,15 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(xpath= "//*[@id='wwlbl_fwpNumberForm_fwpNumber_sip' ] [@for='fwpNumberForm_fwpNumber_sip']")
 	WebElement Number_sip1;
 	
+	@FindBy(id= "parsley-id-5")
+	WebElement Phone_name_err;
+	
+	@FindBy(id= "parsley-id-7")
+	WebElement Phone_Number_err;
+	
+	@FindBy(id= "parsley-id-9")
+	WebElement Phone_priority_err;
+		
 	@FindBy(id= "transferNumberForm_transferNumber_transferName")
 	WebElement transferName;
 	
@@ -158,10 +188,21 @@ public class ConfigurationsPage extends TestBase{
 	@FindBy(xpath= "//*[@id='wwlbl_transferNumberForm_transferNumber_sip' ] [@for='transferNumberForm_transferNumber_sip']")
 	WebElement transferNumber_sip1;
 	
+	@FindBy(id= "parsley-id-5")
+	WebElement transferName_Err;
+	
+	@FindBy(id= "parsley-id-7")
+	WebElement transferNumber_err;
+	
+	
+		
 	@FindBy(id= "dispositionForm_disposition_reason")
 	WebElement disposition_reason;
 	
-	@FindBy(id= "pauseReasonForm_pauseReason_reason")
+	@FindBy(id= "parsley-id-5")
+	WebElement disposition_err;
+	
+		@FindBy(id= "pauseReasonForm_pauseReason_reason")
 	WebElement pauseReason_reason;
 	
 	@FindBy(id= "moveAllLeft1")
@@ -490,6 +531,42 @@ public class ConfigurationsPage extends TestBase{
 		
 	}
 	
+	public String GetPhoneNameErrorMessage() {
+		try{
+			if(Phone_name_err.isDisplayed())
+				return	Phone_name_err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetPhoneNumberErrorMessage() {
+		try{
+			if(Phone_Number_err.isDisplayed())
+				return	Phone_Number_err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetPhonePriorityErrorMessage() {
+		try{
+			if(Phone_priority_err.isDisplayed())
+				return	Phone_priority_err.getText();
+		}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetPhoneNumberConsolidatedErrorMessage() {
+		String con_agent_err_msg="";
+			con_agent_err_msg = GetPhoneNameErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetPhoneNumberErrorMessage();
+		if(con_agent_err_msg=="")
+			con_agent_err_msg =	GetPhonePriorityErrorMessage();
+		return con_agent_err_msg;
+	}
+
+	
+	
 	public void ClickOnShowAllButton() {
 		Select s=new Select(show_button);
 		s.selectByValue("0");
@@ -622,6 +699,58 @@ public class ConfigurationsPage extends TestBase{
 			}return "header is not displayed as Agents";
 	}
 	
+	public void ClickOnAgentGroupMenu() {
+		ConfigurationMenu.click();
+		AgentGroupMenu.click();
+	}
+	
+	public void EnterAgentGroupName(String n) {
+		AgentGroup_Name.clear();
+		AgentGroup_Name.sendKeys(n);
+	}
+	
+	public void EnterAgentGroupDecription(String n) {
+		AgentGroup_description.clear();
+		AgentGroup_description.sendKeys(n);
+	}
+	
+	public String GetAgentGroupNameError() {
+		try{
+		if(AgentGroup_Name_err.isDisplayed())
+			return AgentGroup_Name_err.getText();
+	}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentGroupDescriptionError() {
+		try{
+		if(AgentGroup_description_err.isDisplayed())
+			return AgentGroup_description_err.getText();
+	}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentGroupAssignedAgentsError() {
+		try{
+		if(AgentGroup_assignedAgents_err.isDisplayed())
+			return AgentGroup_assignedAgents_err.getText();
+	}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetAgentGroupAssignedUsersError() {
+		try{
+		if(AgentGroup_assignedUsers_err.isDisplayed())
+			return AgentGroup_assignedUsers_err.getText();
+	}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public void ClickonPhoneNumberMenu() {
+		ConfigurationMenu.click();
+		ph_no_menu.click();
+	}
+	
 	public void EnterNameForPhoneNo(Object n) {
 		if(!n.equals("")) {
 			Number_name.clear();
@@ -749,7 +878,11 @@ public class ConfigurationsPage extends TestBase{
 				transferNumber_sip1.click();
 			if(S.toString().trim().equalsIgnoreCase("no") && transferNumber_sip.isSelected())
 				transferNumber_sip1.click();
-			
+	}
+	
+	public void ClickOnTransferNoMenu() {
+		ConfigurationMenu.click();
+		TransferNumberMenu.click();
 	}
 	
 	public String AddTransferNumber(Object name, Object no, Object sip) {
@@ -818,6 +951,28 @@ public class ConfigurationsPage extends TestBase{
 	}return " header is not matching";
 	}
 	
+	public String GetTransferNameError() {
+		try{
+		if(transferName_Err.isDisplayed())
+			return transferName_Err.getText();
+	}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	public String GetTransferNumberError() {
+		try{
+		if(transferNumber_err.isDisplayed())
+			return transferNumber_err.getText();
+	}catch(NoSuchElementException e) {}
+		return "";
+	}
+	
+	
+	public void ClickOnDispositionMenu() {
+		ConfigurationMenu.click();
+		DispositionMenu.click();
+	}
+	
 	public void Enterdispositions(String R) {
 		if(!R.trim().equals("")) {
 			disposition_reason.clear();
@@ -875,6 +1030,14 @@ public class ConfigurationsPage extends TestBase{
 				} return "names are not matching so not deleting";
 			} return "no data found with deatils "+reason;
 	}return " header is not matching";
+	}
+	
+	public String GetDipositionError() {
+		try{
+			if(disposition_err.isDisplayed())
+				return disposition_err.getText();
+		}catch(NoSuchElementException e) {}
+			return "";
 	}
 	
 	public void EnterPauseReason(Object Preason) {

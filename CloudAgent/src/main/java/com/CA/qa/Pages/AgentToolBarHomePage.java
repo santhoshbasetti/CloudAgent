@@ -226,6 +226,11 @@ public class AgentToolBarHomePage extends TestBase {
 		return ATBagentMode.getText();
 	}
 	
+	public void closebrowser() {
+		 driver.close();
+	}
+	
+	
    
 		
 	
